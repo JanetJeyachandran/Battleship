@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #eef2f3;
+}
+
+#boards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #c7c7c7;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.player-ship {
+  background: #444;
+}
+
+.hit {
+  background: red !important;
+}
+
+.miss {
+  background: lightblue !important;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
